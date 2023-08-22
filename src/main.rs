@@ -39,8 +39,13 @@ fn main() {
 //        * inside immediate mode there needs to be the option of saving a match result set with a namespace
 // TODO : save data     
 // TODO : save pattern
-// TODO : "all" file names (which can be saved into data) // just names?
-// TODO : "all" known files (can also be saved into data)
+// TODO : "all" file names (don't bother saving; allow usage in other commands) // just names?
+// TODO : "all" known cs files (don't save; allow usage in other commands)
+//        * right now this probably looks like:
+//                * classes in namespaces (remember this doesnt always match file structures, so this could be complicated)
+//                  and assorted inheritance structure
+//                * methods in classes with class references and symbols definitions and symbol usages
+//                   (there are some weird edge cases that are going to be hard to parse; like symbol def from 'var out' or destructuring)
 // TODO : help
 
 // TODO : following symbolic links needs to be out of scope for now; is there a way to detect when that's about to happen?
