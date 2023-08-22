@@ -1,4 +1,6 @@
 
+const NAMES_C : &'static str = "names";
+
 fn main() {
     use std::env;
 
@@ -9,12 +11,13 @@ fn main() {
         return;
     }
 
-    if args[1] == "names" {
+    if args[1] == NAMES_C {
 
     }
 }
 
 //fn names_command()
+// TODO : don't follow sym links, but label them in the results from 'names'
 
 // TODO : intermediate mode
 //        * need a way to store off multiple possible match results and refer to them later
